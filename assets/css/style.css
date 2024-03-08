@@ -1,7 +1,83 @@
-.property-container {
-    background-color: blueviolet;
+:root {
+    --main-bg-dark: #323941;
+    --main-heading-color: #FA5CF4;
+    --main-content-color: #DEEAE5;
+    --my-gradient: linear-gradient(to bottom, #714578, #AD50AC);
 }
 
-div {
-    background-color: black;
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-heading-color);
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: -12.5%;
+    border: solid var(--main-content-color);
+    padding: 16px;
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--main-bg-dark);
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: var(--main-heading-color);
+}
+ /* Selectors */
+
+body {
+    background-color:var(--main-bg-dark);
+    color: var(--main-content-color);
+    margin: 60px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+pre {
+    background-color: var(--main-bg-dark);
+    background: var(--my-gradient);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+::selection {
+    background: #2ACBB5;
+    color: var(--main-bg-dark);
+}
+
+
+/* classes and Ids */
+.center-p {
+    text-align: center;
+    color: var(--main-content-color);
+}
+.property-container {
+    border: 2px dashed var(--main-content-color);
+    padding: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+
+
+
+
